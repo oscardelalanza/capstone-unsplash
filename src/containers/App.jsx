@@ -4,6 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Navbar from '../components/Navbar';
 import Project from '../components/Project';
 import About from '../components/About';
+import Footer from '../components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           </TransitionGroup>
         )}
         />
+        <Footer />
       </div>
     </BrowserRouter>
   );

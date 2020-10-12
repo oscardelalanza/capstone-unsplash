@@ -4,6 +4,14 @@ body {
   background-color: #131313;
 }
 
+footer {
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 @mixin gradient-conf {
   background-size: 200% 200%;
   -webkit-background-clip: text;
