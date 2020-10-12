@@ -1,1 +1,19 @@
 /* Include style imports here */
+
+body {
+  background-color: #131313;
+}
+
+.gradient-color {
+  background: linear-gradient( 65.4deg,  rgba(56,248,249,1) -9.1%, rgba(213,141,240,1) 48%, rgba(249,56,152,1) 111.1% );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: AnimationName 5s ease infinite;
+}
+
+@keyframes AnimationName {
+  0% { background-position: 0 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0 50% }
+}
