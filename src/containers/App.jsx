@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Navbar from '../components/Navbar';
 import Project from '../components/Project';
 
@@ -8,11 +9,18 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar />
-        <Switch>
-          <Route exact path="/" component={() => (<h1>Home Page</h1>)} />
-          <Route path="/Project" component={Project} />
-          <Route path="/About" component={() => (<h1>About</h1>)} />
-        </Switch>
+        <Route render={({ location }) => (
+          <TransitionGroup>
+            <CSSTransition key={location.key} timeout={300} classNames="fade">
+              <Switch location={location}>
+                <Route exact path="/" component={() => (<h1 className="page">Home Page</h1>)} />
+                <Route path="/Project" component={Project} />
+                <Route path="/About" component={() => (<h1 className="page">About</h1>)} />
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+        )}
+        />
       </div>
     </BrowserRouter>
   );
