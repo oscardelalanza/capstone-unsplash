@@ -20,47 +20,47 @@ footer {
 }
 
 .gradient-color {
-  background: linear-gradient( 65.4deg,  rgba(56,248,249,1) -9.1%, rgba(213,141,240,1) 48%, rgba(249,56,152,1) 111.1% );
+  background: linear-gradient(65.4deg, rgba(56,248,249,1) -9.1%, rgba(213,141,240,1) 48%, rgba(249,56,152,1) 111.1%);
   @include gradient-conf;
 }
 
 .gradient-color-2 {
-  background: linear-gradient( 100.5deg,  rgba(148,146,236,1) 17.7%, rgba(245,194,194,1) 76.1% );
+  background: linear-gradient(100.5deg, rgba(148,146,236,1) 17.7%, rgba(245,194,194,1) 76.1%);
   @include gradient-conf;
 }
 
 .gradient-color-3 {
-  background: radial-gradient( circle 654px at 0.6% 48%,  rgba(12,170,255,1) 0%, rgba(151,255,129,1) 86.3% );
+  background: radial-gradient(circle 654px at 0.6% 48%, rgba(12,170,255,1) 0%, rgba(151,255,129,1) 86.3%);
   @include gradient-conf;
 }
 
 .gradient-color-4 {
-  background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,37,174,1) 0%, rgba(241,147,55,1) 53.4%, rgba(250,237,56,1) 99.5% );
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,37,174,1) 0%, rgba(241,147,55,1) 53.4%, rgba(250,237,56,1) 99.5%);
   @include gradient-conf;
 }
 
 .gradient-color-5 {
-  background: linear-gradient( 292.9deg,  rgba(254,105,241,1) 28.8%, rgba(182,44,248,1) 70.4% );
+  background: linear-gradient(292.9deg, rgba(254,105,241,1) 28.8%, rgba(182,44,248,1) 70.4%);
   @include gradient-conf;
 }
 
 .gradient-color-6 {
-  background-image: radial-gradient( circle farthest-corner at 49.8% 44.4%,  rgba(251,230,59,1) 0%, rgba(161,255,63,1) 90% );
+  background-image: radial-gradient(circle farthest-corner at 49.8% 44.4%, rgba(251,230,59,1) 0%, rgba(161,255,63,1) 90%);
   @include gradient-conf;
 }
 
 .gradient-color-7 {
-  background: linear-gradient( 109.6deg,  rgba(255,24,134,1) 11.2%, rgba(252,232,68,1) 52%, rgba(53,178,239,1) 100.2% );
+  background: linear-gradient(109.6deg, rgba(255,24,134,1) 11.2%, rgba(252,232,68,1) 52%, rgba(53,178,239,1) 100.2%);
   @include gradient-conf;
 }
 
 .gradient-color-8 {
-  background: linear-gradient( 109.6deg,  rgba(164,250,245,1) 11.2%, rgba(4,67,163,1) 91.1% );
+  background: linear-gradient(109.6deg, rgba(164,250,245,1) 11.2%, rgba(4,67,163,1) 91.1%);
   @include gradient-conf;
 }
 
 .gradient-color-9 {
-  background-image: radial-gradient( circle farthest-corner at 11.7% 80.6%,  rgba(249,185,255,1) 0%, rgba(177,172,255,1) 49.3%, rgba(98,203,255,1) 89% );
+  background-image: radial-gradient(circle farthest-corner at 11.7% 80.6%, rgba(249,185,255,1) 0%, rgba(177,172,255,1) 49.3%, rgba(98,203,255,1) 89%);
   @include gradient-conf;
 }
 
@@ -76,12 +76,15 @@ footer {
   right: 0;
 }
 
-.fade-appear, .fade-enter {
+.fade-appear,
+.fade-enter {
   opacity: 0;
   z-index: 1;
 }
 
-.fade-appear-active, .fade-enter, .fade-enter-active {
+.fade-appear-active,
+.fade-enter,
+.fade-enter-active {
   opacity: 1;
   transition: opacity 300ms linear 150ms;
 }
@@ -90,7 +93,8 @@ footer {
   opacity: 1;
 }
 
-.fade-exit, .fade-exit-active {
+.fade-exit,
+.fade-exit-active {
   opacity: 0;
   transition: opacity 150ms linear;
 }
