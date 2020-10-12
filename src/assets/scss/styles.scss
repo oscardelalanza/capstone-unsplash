@@ -12,6 +12,10 @@ footer {
   right: 0;
 }
 
+.loading {
+  height: 80vh;
+}
+
 @mixin gradient-conf {
   background-size: 200% 200%;
   -webkit-background-clip: text;
