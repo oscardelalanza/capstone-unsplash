@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import Project from '../components/Project';
 import About from '../components/About';
 import Footer from '../components/Footer';
+import Home from './Home';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <TransitionGroup>
             <CSSTransition key={location.key} timeout={300} classNames="fade">
               <Switch location={location}>
-                <Route exact path="/" component={() => (<h1 className="page">Home Page</h1>)} />
+                <Route exact path="/" component={Home} />
                 <Route path="/Project" component={Project} />
                 <Route path="/About" component={About} />
               </Switch>
