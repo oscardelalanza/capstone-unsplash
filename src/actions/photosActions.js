@@ -17,7 +17,7 @@ export const ok = () => ({
 
 export const getNewPhotos = () => (dispatch => {
   dispatch(loading());
-  unsplash.photos.listPhotos(1, 20, 'latest').then(toJson).then(json => {
+  unsplash.photos.listPhotos(1, 30, 'latest').then(toJson).then(json => {
     dispatch(addPhotos(json));
     dispatch(ok());
   });

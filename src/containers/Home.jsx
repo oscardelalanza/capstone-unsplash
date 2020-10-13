@@ -1,19 +1,27 @@
 import React from 'react';
 import {
-  Button, Container, Form, FormControl,
+  Button, Container, Form, FormControl, Card,
 } from 'react-bootstrap';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Animation from '../components/Animation';
 import { LOADING } from '../js/literals';
 
-const Home = (props) => {
+const Home = props => {
   const { photos, status } = props;
   let component;
 
   if (status === LOADING) {
     component = <Animation />;
   } else {
-    component = 'images';
+    component = photos.map(photo => (
+      <Card key={photo.id} className="photo bg-dark text-white p-lg-0 mb-lg-1">
+        <Card.Img src={photo.urls.regular} />
+        <Card.ImgOverlay className="black-transparent">
+          <Card.Text>asdasd</Card.Text>
+        </Card.ImgOverlay>
+      </Card>
+    ));
   }
 
   return (
@@ -25,7 +33,9 @@ const Home = (props) => {
           <Button variant="outline-primary">Search</Button>
         </Form>
       </Container>
-      { component }
+      <Container fluid className="p-lg-0 d-lg-flex justify-content-lg-between flex-lg-wrap mt-lg-3">
+        { component }
+      </Container>
     </Container>
   );
 };
@@ -34,5 +44,10 @@ const mapStateToProps = state => ({
   photos: state.photos,
   status: state.status,
 });
+
+Home.propTypes = {
+  photos: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  status: PropTypes.string.isRequired,
+};
 
 export default connect(mapStateToProps)(Home);
