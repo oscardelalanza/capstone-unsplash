@@ -1,12 +1,11 @@
 import React from 'react';
-import {
-  Button, Container, Form, FormControl, Card,
-} from 'react-bootstrap';
+import { Container, Card } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Animation from '../components/Animation';
 import { LOADING } from '../js/literals';
+import FilterForm from './FilterForm';
 
 const Home = props => {
   const { photos, status } = props;
@@ -39,10 +38,7 @@ const Home = props => {
     <Container fluid className="page mt-lg-4">
       <Container fluid className="d-lg-flex justify-content-lg-between p-lg-0">
         <h5 className="text-light font-weight-light">Explore Amazing Photos</h5>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-lg-2" />
-          <Button variant="outline-primary">Search</Button>
-        </Form>
+        <FilterForm />
       </Container>
       <Container fluid className="p-lg-0 d-lg-flex justify-content-lg-between flex-lg-wrap mt-lg-3">
         { component }
