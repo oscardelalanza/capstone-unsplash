@@ -3,3 +3,4 @@ export const SEARCH_PHOTOS = 'SEARCH_PHOTOS';
 export const ADD_PHOTOS = 'ADD_PHOTOS';
 export const LOADING = 'LOADING';
 export const OK = 'OK';
+export const CHANGE_FILTER = 'CHANGE_FILTER';
