@@ -18,7 +18,15 @@ const Home = props => {
       <Card key={photo.id} className="photo bg-dark text-white p-lg-0 mb-lg-1">
         <Card.Img src={photo.urls.regular} />
         <Card.ImgOverlay className="black-transparent">
-          <Card.Text>asdasd</Card.Text>
+          <Card.Title>{photo.user.name}</Card.Title>
+          <Card.Text>
+            <i className="fas fa-heart text-danger" />
+            {` ${photo.likes}`}
+          </Card.Text>
+          <Card.Text>
+            <i className="far fa-image" />
+            {` ${photo.alt_description || ''}`}
+          </Card.Text>
         </Card.ImgOverlay>
       </Card>
     ));
