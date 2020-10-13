@@ -8,7 +8,7 @@ const Photo = props => {
   console.log(photo);
 
   return (
-    <Container className="mt-lg-4">
+    <Container className="mt-lg-4 mb-lg-4">
       <h5 className="text-white font-weight-light mb-lg-3">
         Photo by:{` ${photo.user.name}`}
       </h5>
