@@ -24,3 +24,5 @@ yarn-error.log*
 .idea
 .env
 .firebaserc
+.firebase
+firebase.json
