@@ -1,5 +1,8 @@
 import React from 'react';
 import { Form, FormControl, Button } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import changeFilter from '../actions/filterActions';
 
 class FilterForm extends React.Component {
   constructor(props) {
@@ -16,19 +19,30 @@ class FilterForm extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    alert(this.state.search);
+    const { changeFilter } = this.props;
+    const { search } = this.state;
+    changeFilter(search);
+    this.setState({ search: '' });
   }
 
   render() {
-    const { value } = this.state;
+    const { search } = this.state;
 
     return (
       <Form inline onSubmit={this.handleSubmit}>
-        <FormControl type="text" placeholder="Search" className="mr-lg-2" onChange={this.handleChange} value={value} />
+        <FormControl type="text" placeholder="Search" className="mr-lg-2" onChange={this.handleChange} value={search} />
         <Button variant="outline-primary" type="submit">Search</Button>
       </Form>
     );
   }
 }
 
-export default FilterForm;
+const mapDispatchToProps = dispatch => ({
+  changeFilter: filter => (dispatch(changeFilter(filter))),
+});
+
+FilterForm.propTypes = {
+  changeFilter: PropTypes.func.isRequired,
+};
+
+export default connect(null, mapDispatchToProps)(FilterForm);
