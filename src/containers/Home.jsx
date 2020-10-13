@@ -4,6 +4,7 @@ import {
 } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import Animation from '../components/Animation';
 import { LOADING } from '../js/literals';
 
@@ -17,17 +18,19 @@ const Home = props => {
     component = photos.map(photo => (
       <Card key={photo.id} className="photo bg-dark text-white p-lg-0 mb-lg-1">
         <Card.Img src={photo.urls.regular} />
-        <Card.ImgOverlay className="black-transparent">
-          <Card.Title>{photo.user.name}</Card.Title>
-          <Card.Text>
-            <i className="fas fa-heart text-danger" />
-            {` ${photo.likes}`}
-          </Card.Text>
-          <Card.Text>
-            <i className="far fa-image" />
-            {` ${photo.alt_description || ''}`}
-          </Card.Text>
-        </Card.ImgOverlay>
+        <Link to={`/${photo.id}`} className="text-white">
+          <Card.ImgOverlay className="black-transparent">
+            <Card.Title>{photo.user.name}</Card.Title>
+            <Card.Text>
+              <i className="fas fa-heart text-danger" />
+              {` ${photo.likes}`}
+            </Card.Text>
+            <Card.Text>
+              <i className="far fa-image" />
+              {` ${photo.alt_description || ''}`}
+            </Card.Text>
+          </Card.ImgOverlay>
+        </Link>
       </Card>
     ));
   }
