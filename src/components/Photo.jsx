@@ -16,14 +16,23 @@ const Photo = props => {
         <Card.Img variant="top" src={photo.urls.regular} />
         <Card.Body>
           <Card.Title>Photo Description</Card.Title>
-          <Card.Text>{photo.description}</Card.Text>
-          <Card.Text>{photo.alt_description}</Card.Text>
-          <Card.Text>Size: {`${photo.width}x${photo.height}`}</Card.Text>
-          <Card.Text>
-            Download this photo:
-            {' '}
-            <Button href={`${photo.links.download}?force=true`} download variant="success" size="sm">Download</Button>
-          </Card.Text>
+          <Container className="mb-lg-2">
+            <Card.Text>{photo.description}</Card.Text>
+            <Card.Text>{photo.alt_description}</Card.Text>
+            <Card.Text>Size: {`${photo.width}x${photo.height}`}</Card.Text>
+            <Card.Text>
+              Download this photo:
+              {' '}
+              <Button href={`${photo.links.download}?force=true`} download variant="success" size="sm">Download</Button>
+            </Card.Text>
+          </Container>
+          <Card.Title>Photographer</Card.Title>
+          <Container>
+            <Card.Text>{photo.user.name}</Card.Text>
+            <Card.Text>{photo.user.bio}</Card.Text>
+            <Card.Text>{photo.user.location}</Card.Text>
+            <Card.Text>{`@${photo.user.instagram_username}`}</Card.Text>
+          </Container>
         </Card.Body>
       </Card>
     </Container>
