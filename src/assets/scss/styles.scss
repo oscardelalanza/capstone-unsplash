@@ -1,15 +1,34 @@
 /* Include style imports here */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #131313;
+  box-sizing: border-box;
 }
 
 footer {
   font-size: 14px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+}
+
+.loading {
+  height: 80vh;
+}
+
+.photo {
+  height: 210px;
+  overflow: hidden;
+  width: 33%;
+}
+
+.black-transparent {
+  background: rgba(0, 0, 0, 0.5);
+  transition: background ease 200ms;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0);
+  }
 }
 
 @mixin gradient-conf {
@@ -80,30 +99,5 @@ footer {
 }
 
 .page {
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
-.fade-appear,
-.fade-enter {
-  opacity: 0;
-  z-index: 1;
-}
-
-.fade-appear-active,
-.fade-enter,
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 300ms linear 150ms;
-}
-
-.fade-exit {
-  opacity: 1;
-}
-
-.fade-exit,
-.fade-exit-active {
-  opacity: 0;
-  transition: opacity 150ms linear;
+  min-height: 86vh;
 }
