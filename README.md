@@ -1,11 +1,16 @@
 # The Gallery Pic
 
-> As the name suggest, The Gallery Pic is a photo browser built with different JS technologies and, the Unsplash API
-> as a server source to retrieve photographs from all over the world.
-
+> This the Capstone Project that corresponds to the React & Redux Microverse course. So, as the name of the project suggest,
+> The Gallery Pic is a photo browser built with different JS technologies like React, Redux, Bootstrap and the Unsplash API.
+> Check the complete assigment here: [Catalogue of Statistics](https://www.notion.so/Catalogue-of-Statistics-72446e7fa33c403a9b6a0bc1de5c6cf5#ae194b0436a64e19bcc7ba295302118a)
 ![screenshot](./screenshots/main.png)
 
-### Catalogue of Statistics
+## Catalogue of Statistics
+
+## Built With
+- `JavaScript`, `HTML`, `CSS`
+- `React`, `Redux`, `Unsplash-JS`, `Font Awesome`
+- `React-Bootstrap`, `React-Redux`, `Redux-Thunk`, `Redux-Logger`, `React-router-dom`, `prop-types`, `node-sass`
  
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
