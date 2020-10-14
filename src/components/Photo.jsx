@@ -12,7 +12,7 @@ const Photo = props => {
       <h5 className="text-white font-weight-light mb-lg-3">
         Photo by:{` ${photo.user.name}`}
       </h5>
-      <Card>
+      <Card style={{ border: `solid 1px ${photo.color}`}}>
         <Card.Img variant="top" src={photo.urls.regular} />
         <Card.Body>
           <Card.Title>Photo Description</Card.Title>
