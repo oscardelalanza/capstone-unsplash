@@ -12,7 +12,10 @@
 - `JavaScript`, `HTML`, `CSS`
 - `React`, `Redux`, `Unsplash-JS`, `Font Awesome`
 - `React-Bootstrap`, `React-Redux`, `Redux-Thunk`, `Redux-Logger`, `React-router-dom`, `prop-types`, `node-sass`
- 
+
+## Live Demo
+Here you can find a Live Demo of the project with its latest features [The Gallery Pic](https://the-gallery-pic.web.app/). 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
