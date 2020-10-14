@@ -1,6 +1,8 @@
 import { toJson } from 'unsplash-js';
 import unsplash from '../js/unsplash';
-import { ADD_PHOTOS, CHANGE_FILTER, LOADING, OK } from '../js/literals';
+import {
+  ADD_PHOTOS, CHANGE_FILTER, LOADING, OK,
+} from '../js/literals';
 
 export const addPhotos = photos => ({
   type: ADD_PHOTOS,
