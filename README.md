@@ -1,3 +1,12 @@
+# The Gallery Pic
+
+> As the name suggest, The Gallery Pic is a photo browser built with different JS technologies and, the Unsplash API
+> as a server source to retrieve photographs from all over the world.
+
+![screenshot](./screenshots/main.png)
+
+### Catalogue of Statistics
+ 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
