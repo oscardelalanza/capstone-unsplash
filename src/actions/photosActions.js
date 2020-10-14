@@ -31,5 +31,10 @@ export const changeFilter = filter => ({
 });
 
 export const searchPhotos = filter => (dispatch => {
+  dispatch(loading());
   dispatch(changeFilter(filter));
+  unsplash.search.photos(filter, 1, 30).then(toJson).then(json => {
+    dispatch(addPhotos(json.results));
+    dispatch(ok());
+  });
 });
