@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 
 const Photo = props => {
   const { photo } = props;
-  console.log(photo);
 
   return (
     <Container className="mt-lg-4 mb-lg-4">
