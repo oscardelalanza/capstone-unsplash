@@ -59,3 +59,30 @@ Execute `npm test` to launch the test runner in the interactive watch mode. See 
 
 Execute `npm run build` to build the app for production to the `build` folder. It correctly bundles React in production
 mode and optimizes the build for the best performance. See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Authors
+
+👤 **Oscar De La Lanza**
+
+- Github: [@oscardelalanza](https://github.com/oscardelalanza)
+- Twitter: [@oscardelalanza](https://twitter.com/oscardelalanza)
+- Linkedin: [Oscar De La Lanza](https://www.linkedin.com/in/oscardelalanza)
+- Email: oscardelalanza@gmail.com
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/oscardelalanza/capstone-unsplash/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Unasplash Developers. 
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
