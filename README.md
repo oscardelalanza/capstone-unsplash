@@ -14,9 +14,20 @@
 - `React-Bootstrap`, `React-Redux`, `Redux-Thunk`, `Redux-Logger`, `React-router-dom`, `prop-types`, `node-sass`
 
 ## Live Demo
-Here you can find a Live Demo of the project with its latest features [The Gallery Pic](https://the-gallery-pic.web.app/). 
+Here you can find a Live Demo of the project with its latest features [The Gallery Pic](https://the-gallery-pic.web.app/).
+
+### Getting Started 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Prerequisites
+
+If you want to get a local copy of this project first make you have installed `Git` and `node-js` in your local environment.
+Then clone the project by running any of the following commands: 
+- SSH: `git clone git@github.com:oscardelalanza/capstone-unsplash.git`
+- HTTPS: `git clone https://github.com/oscardelalanza/capstone-unsplash.git`
+- GitHub CLI: `gh repo clone oscardelalanza/capstone-unsplash`
+- ZIP: [Download](https://github.com/oscardelalanza/capstone-unsplash/archive/develop.zip)
 
 ## Available Scripts
 
