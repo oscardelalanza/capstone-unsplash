@@ -1,6 +1,6 @@
 import { toJson } from 'unsplash-js';
 import unsplash from '../js/unsplash';
-import { ADD_PHOTOS, LOADING, OK } from '../js/literals';
+import { ADD_PHOTOS, CHANGE_FILTER, LOADING, OK } from '../js/literals';
 
 export const addPhotos = photos => ({
   type: ADD_PHOTOS,
@@ -21,4 +21,13 @@ export const getNewPhotos = () => (dispatch => {
     dispatch(addPhotos(json));
     dispatch(ok());
   });
+});
+
+export const changeFilter = filter => ({
+  type: CHANGE_FILTER,
+  filter,
+});
+
+export const searchPhotos = filter => (dispatch => {
+  dispatch(changeFilter(filter));
 });

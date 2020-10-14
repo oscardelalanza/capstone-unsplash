@@ -2,7 +2,7 @@ import React from 'react';
 import { Form, FormControl, Button } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import changeFilter from '../actions/filterActions';
+import { searchPhotos } from '../actions/photosActions';
 
 class FilterForm extends React.Component {
   constructor(props) {
@@ -38,7 +38,7 @@ class FilterForm extends React.Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  changeFilter: filter => (dispatch(changeFilter(filter))),
+  changeFilter: filter => (dispatch(searchPhotos(filter))),
 });
 
 FilterForm.propTypes = {
