@@ -9,16 +9,20 @@ const Photo = props => {
   return (
     <Container className="mt-lg-4 mb-lg-4">
       <h5 className="text-white font-weight-light mb-lg-3">
-        Photo by:{` ${photo.user.name}`}
+        Photo by:
+        {` ${photo.user.name}`}
       </h5>
-      <Card style={{ border: `solid 1px ${photo.color}`}}>
+      <Card style={{ border: `solid 1px ${photo.color}` }}>
         <Card.Img variant="top" src={photo.urls.regular} />
         <Card.Body>
           <Card.Title>Photo Description</Card.Title>
           <Container className="mb-lg-2">
             <Card.Text>{photo.description}</Card.Text>
             <Card.Text>{photo.alt_description}</Card.Text>
-            <Card.Text>Size: {`${photo.width}x${photo.height}`}</Card.Text>
+            <Card.Text>
+              Size:
+              {`${photo.width}x${photo.height}`}
+            </Card.Text>
             <Card.Text>
               Download this photo:
               {' '}
@@ -49,8 +53,19 @@ Photo.propTypes = {
     urls: PropTypes.shape({
       regular: PropTypes.string,
     }),
+    color: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    alt_description: PropTypes.string.isRequired,
+    width: PropTypes.number.isRequired,
+    height: PropTypes.number.isRequired,
+    links: PropTypes.shape({
+      download: PropTypes.string.isRequired,
+    }),
     user: PropTypes.shape({
       name: PropTypes.string.isRequired,
+      bio: PropTypes.string.isRequired,
+      location: PropTypes.string.isRequired,
+      instagram_username: PropTypes.string.isRequired,
     }),
   }).isRequired,
 };
