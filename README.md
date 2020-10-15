@@ -32,6 +32,12 @@ Clone the project by running any of the following commands:
 - GitHub CLI: `gh repo clone oscardelalanza/capstone-unsplash`
 - ZIP: [Download](https://github.com/oscardelalanza/capstone-unsplash/archive/develop.zip)
 
+Then go to [Unsplash Developers](https://unsplash.com/developers) and sign up as a developer.
+- Create a new app and save your `Acces Key` and `Secret Key`.
+- Inside `.env.example` you will find `REACT_APP_ACCESS_KEY=Unsplash_access_key` and `REACT_APP_SECRET_KEY=Unsplash_secret_key`
+and replace `Unsplash_acces_key` and `Unsplas_secret_key` with the corresponding keys that you get from Unsplash developers.
+- Then save `.env.example` file as `.env` 
+
 ### Install
 
 Inside the project directory run `npm install` no install all the required `node_modules`.
