@@ -53,19 +53,19 @@ Photo.propTypes = {
     urls: PropTypes.shape({
       regular: PropTypes.string,
     }),
-    color: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    alt_description: PropTypes.string.isRequired,
+    color: PropTypes.string,
+    description: PropTypes.string,
+    alt_description: PropTypes.string,
     width: PropTypes.number.isRequired,
     height: PropTypes.number.isRequired,
     links: PropTypes.shape({
       download: PropTypes.string.isRequired,
     }),
     user: PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      bio: PropTypes.string.isRequired,
-      location: PropTypes.string.isRequired,
-      instagram_username: PropTypes.string.isRequired,
+      name: PropTypes.string,
+      bio: PropTypes.string,
+      location: PropTypes.string,
+      instagram_username: PropTypes.string,
     }),
   }).isRequired,
 };
