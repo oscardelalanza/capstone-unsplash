@@ -1,5 +1,7 @@
 import filterReducer from '../reducers/filterReducer';
-import { ADD_PHOTOS, CHANGE_FILTER, LOADING, OK } from '../js/literals';
+import {
+  ADD_PHOTOS, CHANGE_FILTER, LOADING, OK,
+} from '../js/literals';
 import statusReducer from '../reducers/statusReducer';
 import photoReducer from '../reducers/photosReducer';
 
