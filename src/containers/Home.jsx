@@ -42,7 +42,7 @@ class Home extends React.Component {
     }
 
     return (
-      <Container fluid className="page mt-lg-4">
+      <Container fluid className="page mt-lg-4" data-testid="home">
         <Container fluid className="d-lg-flex justify-content-lg-between p-lg-0">
           <h5 className="text-light font-weight-light">Explore Amazing Photos</h5>
           <FilterForm />

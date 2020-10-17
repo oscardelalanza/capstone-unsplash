@@ -29,7 +29,7 @@ class FilterForm extends React.Component {
     const { search } = this.state;
 
     return (
-      <Form inline onSubmit={this.handleSubmit}>
+      <Form inline onSubmit={this.handleSubmit} data-testid="search-form">
         <FormControl type="text" placeholder="Search" className="mr-lg-2" onChange={this.handleChange} value={search} />
         <Button variant="outline-primary" type="submit">Search</Button>
       </Form>
