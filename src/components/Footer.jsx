@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 
 const Footer = () => (
-  <footer>
+  <footer data-testid="footer">
     <Container fluid className="text-light text-center bg-dark p-lg-3">
       Made with
       {' '}

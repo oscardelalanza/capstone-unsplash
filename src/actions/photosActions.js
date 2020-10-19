@@ -19,7 +19,7 @@ export const ok = () => ({
 
 export const getNewPhotos = () => (dispatch => {
   dispatch(loading());
-  unsplash.photos.listPhotos(1, 30, 'latest').then(toJson).then(json => {
+  return unsplash.photos.listPhotos(1, 30, 'latest').then(toJson).then(json => {
     dispatch(addPhotos(json));
     dispatch(ok());
   });
@@ -33,7 +33,7 @@ export const changeFilter = filter => ({
 export const searchPhotos = filter => (dispatch => {
   dispatch(loading());
   dispatch(changeFilter(filter));
-  unsplash.search.photos(filter, 1, 30).then(toJson).then(json => {
+  return unsplash.search.photos(filter, 1, 30).then(toJson).then(json => {
     dispatch(addPhotos(json.results));
     dispatch(ok());
   });

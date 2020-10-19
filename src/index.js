@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import App from './containers/App';
+import App from './components/App';
 import store from './store';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/scss/styles.scss';
 import '@fortawesome/fontawesome-free/js/all.min';
-import { getNewPhotos } from './actions/photosActions';
-
-store.dispatch(getNewPhotos());
 
 ReactDOM.render(
   <React.StrictMode>

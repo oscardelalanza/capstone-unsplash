@@ -3,7 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const NavMenu = () => (
-  <Navbar bg="dark" variant="dark">
+  <Navbar bg="dark" variant="dark" data-testid="navbar">
     <Navbar.Brand className="gradient-color">
       The Gallery Pic
     </Navbar.Brand>

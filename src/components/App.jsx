@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import Project from '../components/Project';
-import About from '../components/About';
-import Footer from '../components/Footer';
-import Home from './Home';
-import Photo from '../components/Photo';
+import Navbar from './Navbar';
+import Project from './Project';
+import About from './About';
+import Footer from './Footer';
+import Home from '../containers/Home';
+import Photo from './Photo';
 
 function App() {
   return (

@@ -1,68 +1,94 @@
+# The Gallery Pic
+
+> This the Capstone Project that corresponds to the React & Redux Microverse course. So, as the name of the project suggest,
+> The Gallery Pic is a photo browser built with different JS technologies like React, Redux, Bootstrap and the Unsplash API.
+> Check the complete assigment here: [Catalogue of Statistics](https://www.notion.so/Catalogue-of-Statistics-72446e7fa33c403a9b6a0bc1de5c6cf5#ae194b0436a64e19bcc7ba295302118a)
+
+![screenshot](./screenshots/main.png)
+
+## Catalogue of Statistics
+
+## Built With
+- `JavaScript`, `HTML`, `CSS`
+- `React`, `Redux`, `Unsplash-JS`, `Font Awesome`
+- `React-Bootstrap`, `React-Redux`, `Redux-Thunk`, `Redux-Logger`, `React-router-dom`, `prop-types`, `node-sass`
+
+## Live Demo
+Here you can find a Live Demo of the project with its latest features [The Gallery Pic](https://the-gallery-pic.web.app/).
+
+### Getting Started 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Prerequisites
 
-In the project directory, you can run:
+If you want to get a local copy of this project first make you have installed `Git` and `node-js` in your local environment.
 
-### `npm start`
+### Setup
 
-Runs the app in the development mode.<br />
+Clone the project by running any of the following commands: 
+- SSH: `git clone git@github.com:oscardelalanza/capstone-unsplash.git`
+- HTTPS: `git clone https://github.com/oscardelalanza/capstone-unsplash.git`
+- GitHub CLI: `gh repo clone oscardelalanza/capstone-unsplash`
+- ZIP: [Download](https://github.com/oscardelalanza/capstone-unsplash/archive/develop.zip)
+
+Then go to [Unsplash Developers](https://unsplash.com/developers) and sign up as a developer.
+- Create a new app and save your `Acces Key` and `Secret Key`.
+- Inside `.env.example` you will find `REACT_APP_ACCESS_KEY=Unsplash_access_key` and `REACT_APP_SECRET_KEY=Unsplash_secret_key`
+and replace `Unsplash_acces_key` and `Unsplas_secret_key` with the corresponding keys that you get from Unsplash developers.
+- Then save `.env.example` file as `.env` 
+
+### Install
+
+Inside the project directory run `npm install` no install all the required `node_modules`.
+
+Then execute `npm start` to run the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Usage
 
-### `npm test`
+- Get the latest photographs from different artists since the beginning.
+![home](./screenshots/home.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Find what is relevant to you with in a simple way.
+![search](./screenshots/search.png)
 
-### `npm run build`
+- Get all the info of your favorite photos with just a single click.
+![description](./screenshots/description.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Run tests
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Execute `npm test` to launch the test runner in the interactive watch mode. See the section about
+[running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Execute `npm run build` to build the app for production to the `build` folder. It correctly bundles React in production
+mode and optimizes the build for the best performance. See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run build` fails to minify
+## Authors
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+👤 **Oscar De La Lanza**
+
+- Github: [@oscardelalanza](https://github.com/oscardelalanza)
+- Twitter: [@oscardelalanza](https://twitter.com/oscardelalanza)
+- Linkedin: [Oscar De La Lanza](https://www.linkedin.com/in/oscardelalanza)
+- Email: oscardelalanza@gmail.com
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/oscardelalanza/capstone-unsplash/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Unasplash Developers. 
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
