@@ -87,7 +87,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Unasplash Developers. 
+- Unasplash Developers.
+- [Guadalupe Rangel](https://github.com/Luzaks) for helping me to set up the testing suite of this project.
 
 ## 📝 License
 
